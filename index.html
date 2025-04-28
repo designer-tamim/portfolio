@@ -42,9 +42,11 @@
 
       <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Md Tamim Hasan" width="80">
+        <figure class="avatar-box" style="width: 170px; height: 170px; overflow: hidden; border-radius: 50%;">
+          <img src="./assets/images/my-avatar.png" alt="Md Tamim Hasan" style="width: 100%; height: 100%;">
         </figure>
+        
+        
 
         <div class="info-content">
           <h1 class="name" title="Md Tamim Hasan">Md Tamim Hasan</h1>
@@ -184,11 +186,11 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Sample Work</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>Certifications</button>
           </li>
 
         </ul>
@@ -489,13 +491,26 @@
 
 
       <!--
-        - #PORTFOLIO
+        - #SAMPLE WORK
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="sample work">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 style="color: white;">Check my all works - </h2>
+          <h3 style="color: white;"> From Dribble and Behance!!</h3>
+          <br>
+          <a href="https://dribbble.com/designer-tamim" target="_blank" style="color: white; font-size: 16px;">
+            <i class="fa-brands fa-dribbble" style="color: #ea4c89;"></i>
+            &nbsp;&nbsp;Dribbble (Figma - Mobile UI | Web App UI)
+          </a>
+          <br>
+          <a href="https://www.behance.net/designer-tamim" target="_blank" style="color: white; font-size: 16px;">
+            <i class="fa-brands fa-behance" style="color: #1769ff;"></i>
+            &nbsp;&nbsp;Behance (Photoshop | Illustrator | Calligraphy)
+          </a>
+          <br>
+          <br>
         </header>
 
         <section class="projects">
@@ -731,13 +746,13 @@
 
 
       <!--
-        - #CONTACT
+        - #Certifications
       -->
 
-      <article class="contact" data-page="contact">
+      <article class="contact" data-page="certifications">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">My Certifications</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
@@ -746,29 +761,33 @@
           </figure>
         </section>
 
-        <section class="contact-form">
+        <section>
 
-          <h3 class="h3 form-title" style="color: #d3b25f;">Contact with Designer Tamim</h3>
-
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
+          <h3 class="h3 form-title" style="color: #d3b25f;">
+            Certifications of <span style="color: white; display: inline;">Designer Tamim</span>
+          </h3>
+                
+          <ul style="list-style: none; padding: 0; margin: 0;">
+        
+            <li style="margin-bottom: 30px;">
+              <a href="https://www.udemy.com/certificate/UC-f745868b-f256-4ee3-820d-f0ffbd316193/" target="_blank" style="display: block; text-decoration: none; color: white;">
+                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-f745868b-f256-4ee3-820d-f0ffbd316193.jpg?v=1744727103000" alt="Figma UI/UX Design Masterclass" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: block; margin: 0 auto 15px;">
+                <span style="display: block; text-align: center; font-size: 16px;">Learn Figma: UI/UX Design Masterclass From Beginner to Pro</span>
+              </a>
+            </li>
+        
+            <li style="margin-bottom: 30px;">
+              <a href="https://www.udemy.com/certificate/UC-b021d441-a747-4fa6-b8e3-4dcd92a00c1c/" target="_blank" style="display: block; text-decoration: none; color: white;">
+                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-b021d441-a747-4fa6-b8e3-4dcd92a00c1c.jpg?v=1744933769000" alt="Mobile App Design in Figma" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: block; margin: 0 auto 15px;">
+                <span style="display: block; text-align: center; font-size: 16px;">Mobile App Design in Figma: From Concept to Prototype</span>
+              </a>
+            </li>
+        
+          </ul>
+        
         </section>
+        
+        
 
       </article>
 
