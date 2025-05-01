@@ -23,7 +23,57 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    @media (max-width: 1024px) {
+      #responsive-sidebar {
+        display: none;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      color: white;
+      background-color: #333;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .social-link:hover {
+      background-color: #444;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .about-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -38,15 +88,16 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar" data-sidebar id="responsive-sidebar">
+
 
       <div class="sidebar-info">
 
         <figure class="avatar-box" style="width: 170px; height: 170px; overflow: hidden; border-radius: 50%;">
           <img src="./assets/images/my-avatar.png" alt="Md Tamim Hasan" style="width: 100%; height: 100%;">
         </figure>
-        
-        
+
+
 
         <div class="info-content">
           <h1 class="name" title="Md Tamim Hasan">Md Tamim Hasan</h1>
@@ -95,7 +146,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="#" class="contact-link">+8801709606***</a>
+              <a href="#" class="contact-link">+880170960****</a>
             </div>
 
           </li>
@@ -108,7 +159,8 @@
 
             <div class="contact-info">
               <p class="contact-title">Tools</p>
-              <p style="color: white">Figma | Canva | Illustrator | Photoshop | PixelLab | Infinite Painter | CalliPro</p>
+              <p style="color: white">Figma | Canva | Illustrator | Photoshop | PixelLab | Infinite Painter | CalliPro
+              </p>
             </div>
 
           </li>
@@ -139,11 +191,11 @@
             </a>
           </li>
 
-        <li class="social-item">
-          <a href="https://www.behance.net/designer-tamim" target="_blank" class="social-link">
-          <i class="fa-brands fa-behance" style="color: #1769ff;"></i>
-        </a>
-        </li>
+          <li class="social-item">
+            <a href="https://www.behance.net/designer-tamim" target="_blank" class="social-link">
+              <i class="fa-brands fa-behance" style="color: #1769ff;"></i>
+            </a>
+          </li>
 
           <li class="social-item">
             <a href="https://wa.me/8801709606301" class="social-link">
@@ -152,12 +204,12 @@
           </li>
 
           <li class="social-item">
-  <a href="https://t.me/designer_tamim" class="social-link">
-    <i class="fa-brands fa-telegram" style="color: #0088cc;"></i>
-  </a>
-</li>
+            <a href="https://t.me/designer_tamim" class="social-link">
+              <i class="fa-brands fa-telegram" style="color: #0088cc;"></i>
+            </a>
+          </li>
 
-          
+
           <li class="social-item">
             <a href="https://www.linkedin.com/in/designer-tamim/" target="_blank" class="social-link">
               <i class="fa-brands fa-linkedin" style="color: #0A66C2;"></i>
@@ -218,13 +270,49 @@
           <h2 class="h2 article-title">About me</h2>
         </header>
 
-        <section class="about-text">     
-               <p>
-            I'm a self-motivated UI/UX Designer from Meherpur, Bangladesh. I love learning new things and enjoy creating clean and user-friendly designs.
+        <section class="about-text">
+
+          <div class="profile-header">
+            <img src="./assets/images/tamim-pic.jpg" alt="Md Tamim Hasan" class="about-avatar">
+            <div>
+              <h2>Md Tamim Hasan</h2>
+              <br>
+              <p><strong>UI/UX Designer</strong> </p>
+              <p><strong>Arabic Calligrapher</strong> </p>
+              <p><strong>Loves to learn</strong> </p>
+            </div>
+          </div>
+
+          <p class="contact-title">Tools</p>
+          <p style="color: white">Figma | Canva | Illustrator | Photoshop | PixelLab | Infinite Painter | CalliPro
           </p>
 
-          <p>
-            I focus on making designs that are easy to use and nice to look at. Whether it’s for social media or websites, I try to make every design simple, clear, and helpful. I’m always learning and working to improve my skills so I can create better experiences for people.          </p>
+          <p class="contact-title">Email</p>
+          <a href="mailto:designer.tamimh@gmail.com" style="color: white;">designer.tamimh@gmail.com</a>
+          </p>
+          <p class="contact-title">Mobile</p>
+          <p><strong>+880170960****</strong> </p>
+
+          <p class="contact-title">Location</p>
+          <p><strong>Meherpur, Bangladesh</strong> </p>
+
+          <div class="social-icons">
+            <a href="https://dribbble.com/designer-tamim" target="_blank" class="social-link">
+              <i class="fa-brands fa-dribbble" style="color: #ea4c89;"></i> Dribbble
+            </a>
+            <a href="https://www.behance.net/designer-tamim" target="_blank" class="social-link">
+              <i class="fa-brands fa-behance" style="color: #1769ff;"></i> Behance
+            </a>
+            <a href="https://wa.me/8801709606301" target="_blank" class="social-link">
+              <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> WhatsApp
+            </a>
+            <a href="https://t.me/designer_tamim" target="_blank" class="social-link">
+              <i class="fa-brands fa-telegram" style="color: #0088cc;"></i> Telegram
+            </a>
+            <a href="https://www.linkedin.com/in/designer-tamim/" target="_blank" class="social-link">
+              <i class="fa-brands fa-linkedin" style="color: #0A66C2;"></i> LinkedIn
+            </a>
+          </div>
         </section>
 
 
@@ -265,7 +353,7 @@
                 <h4 class="h4 service-item-title">Website UI Design</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  High-quality designs of sites at the professional level.
                 </p>
               </div>
 
@@ -281,7 +369,7 @@
                 <h4 class="h4 service-item-title">Mobile UI Design</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Professional desgins of applications for iOS and Android.
                 </p>
               </div>
 
@@ -329,7 +417,8 @@
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatum provident ut perspiciatis molestias nulla inventore odit magni, in veritatis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatum provident ut
+                    perspiciatis molestias nulla inventore odit magni, in veritatis.
                   </p>
                 </div>
 
@@ -347,7 +436,8 @@
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quisquam inventore velit nesciunt veniam saepe ipsum iure, numquam doloribus nisi.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quisquam inventore velit nesciunt
+                    veniam saepe ipsum iure, numquam doloribus nisi.
                   </p>
                 </div>
 
@@ -433,7 +523,9 @@
 
               <div data-modal-text>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore est quisquam unde nemo reiciendis autem, doloremque dolor suscipit nam placeat debitis commodi ea incidunt a, magni fuga accusamus minima dolorem.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore est quisquam unde nemo reiciendis
+                  autem, doloremque dolor suscipit nam placeat debitis commodi ea incidunt a, magni fuga accusamus
+                  minima dolorem.
                 </p>
               </div>
 
@@ -583,7 +675,8 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="website ui design">
-              <a href="https://dribbble.com/shots/25915626-Futuristic-Bicycle-Web-UI?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Futuristic%20Bicycle%20Web%20UI&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Futuristic%20Bicycle%20Web%20UI&utm_medium=Social_Share">
+              <a
+                href="https://dribbble.com/shots/25915626-Futuristic-Bicycle-Web-UI?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Futuristic%20Bicycle%20Web%20UI&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Futuristic%20Bicycle%20Web%20UI&utm_medium=Social_Share">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -601,7 +694,8 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="website ui design">
-              <a href="https://dribbble.com/shots/25915623-Energy-Drink-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Energy%20Drink%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Energy%20Drink%20Landing%20Page&utm_medium=Social_Share">
+              <a
+                href="https://dribbble.com/shots/25915623-Energy-Drink-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Energy%20Drink%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Energy%20Drink%20Landing%20Page&utm_medium=Social_Share">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -619,7 +713,8 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="website ui design">
-              <a href="https://dribbble.com/shots/25915636-Futuristic-Real-Estate-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Futuristic%20Real%20Estate%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Futuristic%20Real%20Estate%20Landing%20Page&utm_medium=Social_Share">
+              <a
+                href="https://dribbble.com/shots/25915636-Futuristic-Real-Estate-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Futuristic%20Real%20Estate%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Futuristic%20Real%20Estate%20Landing%20Page&utm_medium=Social_Share">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -637,7 +732,8 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="mobile ui design">
-              <a href="https://dribbble.com/shots/25915462-Nike-Shoe-Store-App-UI?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Nike%20Shoe%20Store%20App%20UI&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Nike%20Shoe%20Store%20App%20UI&utm_medium=Social_Share">
+              <a
+                href="https://dribbble.com/shots/25915462-Nike-Shoe-Store-App-UI?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Nike%20Shoe%20Store%20App%20UI&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Nike%20Shoe%20Store%20App%20UI&utm_medium=Social_Share">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -655,7 +751,8 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="mobile ui design">
-              <a href="https://dribbble.com/shots/25923428-Neumorphic-Audio-Controller-Interface?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Neumorphic%20Audio%20Controller%20Interface&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Neumorphic%20Audio%20Controller%20Interface&utm_medium=Social_Share">
+              <a
+                href="https://dribbble.com/shots/25923428-Neumorphic-Audio-Controller-Interface?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Neumorphic%20Audio%20Controller%20Interface&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Neumorphic%20Audio%20Controller%20Interface&utm_medium=Social_Share">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -673,7 +770,8 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="mobile ui design">
-              <a href="https://dribbble.com/shots/25915587-Fresh-Tasty-Food-Delivery-App-UI?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Fresh%20%26%20Tasty%20Food%20Delivery%20App%20UI&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Fresh%20%26%20Tasty%20Food%20Delivery%20App%20UI&utm_medium=Social_Share">
+              <a
+                href="https://dribbble.com/shots/25915587-Fresh-Tasty-Food-Delivery-App-UI?utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Fresh%20%26%20Tasty%20Food%20Delivery%20App%20UI&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=designer-tamim&utm_content=Fresh%20%26%20Tasty%20Food%20Delivery%20App%20UI&utm_medium=Social_Share">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -764,7 +862,10 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14604.486177835088!2d88.62196883289319!3d23.778685793426263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f9480e64c8706f%3A0xcbbdd02da0f3099e!2sMeherpur!5e0!3m2!1sen!2sbd!4v1745340168520!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14604.486177835088!2d88.62196883289319!3d23.778685793426263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f9480e64c8706f%3A0xcbbdd02da0f3099e!2sMeherpur!5e0!3m2!1sen!2sbd!4v1745340168520!5m2!1sen!2sbd"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </figure>
         </section>
 
@@ -773,35 +874,50 @@
           <h3 class="h3 form-title" style="color: #d3b25f;">
             Certifications of <span style="color: white; display: inline;">Designer Tamim</span>
           </h3>
-                
+
           <ul style="list-style: none; padding: 0; margin: 0;">
-        
+
             <li style="margin-bottom: 30px;">
-              <a href="https://www.udemy.com/certificate/UC-f745868b-f256-4ee3-820d-f0ffbd316193/" target="_blank" style="display: block; text-decoration: none; color: white;">
-                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-f745868b-f256-4ee3-820d-f0ffbd316193.jpg?v=1744727103000" alt="Figma UI/UX Design Masterclass" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: block; margin: 0 auto 15px;">
-                <span style="display: block; text-align: center; font-size: 16px;">Learn Figma: UI/UX Design Masterclass From Beginner to Pro</span>
-              </a>
-            </li>
-        
-            <li style="margin-bottom: 30px;">
-              <a href="https://www.udemy.com/certificate/UC-b021d441-a747-4fa6-b8e3-4dcd92a00c1c/" target="_blank" style="display: block; text-decoration: none; color: white;">
-                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-b021d441-a747-4fa6-b8e3-4dcd92a00c1c.jpg?v=1744933769000" alt="Mobile App Design in Figma" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: block; margin: 0 auto 15px;">
-                <span style="display: block; text-align: center; font-size: 16px;">Mobile App Design in Figma: From Concept to Prototype</span>
+              <a href="https://www.udemy.com/certificate/UC-f745868b-f256-4ee3-820d-f0ffbd316193/" target="_blank"
+                style="display: block; text-decoration: none; color: white;">
+                <img
+                  src="https://udemy-certificate.s3.amazonaws.com/image/UC-f745868b-f256-4ee3-820d-f0ffbd316193.jpg?v=1744727103000"
+                  alt="Figma UI/UX Design Masterclass"
+                  style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: block; margin: 0 auto 15px;">
+                <span style="display: block; text-align: center; font-size: 16px;">Learn Figma: UI/UX Design Masterclass
+                  From Beginner to Pro</span>
               </a>
             </li>
 
             <li style="margin-bottom: 30px;">
-              <a href="https://www.udemy.com/certificate/UC-99e7e24c-96d9-4e53-a738-3bdad3ab2c92/" target="_blank" style="display: block; text-decoration: none; color: white;">
-                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-99e7e24c-96d9-4e53-a738-3bdad3ab2c92.jpg?v=1745945624000" alt="Essential Photoshop Course" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: block; margin: 0 auto 15px;">
-                <span style="display: block; text-align: center; font-size: 16px;">Essential Photoshop Course for Beginner To Advanced</span>
+              <a href="https://www.udemy.com/certificate/UC-b021d441-a747-4fa6-b8e3-4dcd92a00c1c/" target="_blank"
+                style="display: block; text-decoration: none; color: white;">
+                <img
+                  src="https://udemy-certificate.s3.amazonaws.com/image/UC-b021d441-a747-4fa6-b8e3-4dcd92a00c1c.jpg?v=1744933769000"
+                  alt="Mobile App Design in Figma"
+                  style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: block; margin: 0 auto 15px;">
+                <span style="display: block; text-align: center; font-size: 16px;">Mobile App Design in Figma: From
+                  Concept to Prototype</span>
               </a>
             </li>
-        
+
+            <li style="margin-bottom: 30px;">
+              <a href="https://www.udemy.com/certificate/UC-99e7e24c-96d9-4e53-a738-3bdad3ab2c92/" target="_blank"
+                style="display: block; text-decoration: none; color: white;">
+                <img
+                  src="https://udemy-certificate.s3.amazonaws.com/image/UC-99e7e24c-96d9-4e53-a738-3bdad3ab2c92.jpg?v=1745945624000"
+                  alt="Essential Photoshop Course"
+                  style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: block; margin: 0 auto 15px;">
+                <span style="display: block; text-align: center; font-size: 16px;">Essential Photoshop Course for
+                  Beginner To Advanced</span>
+              </a>
+            </li>
+
           </ul>
-        
+
         </section>
-        
-        
+
+
 
       </article>
 
